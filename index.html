@@ -10,17 +10,79 @@
 <body>
 
   <div class="wrapper">
-    <a href="" class="source" id="book" onclick="modalWindow.show(['600px'], ['html-текст'])">Книга, монографія</a>
-    <a href="" class="source" id="chapter">Розділ </br> книги</a>
-    <a href="" class="source" id="URL">Електронне джерело </a>
-    <a href="" class="source" id="magazine">Газета / журнал</a>
-    <a href="" class="source" id="scientific-jornal">Науковий журнал</a>
-    <a href="" class="source" id="thesis">Дисертаційна робота </a>
-    <a href="" class="source" id="conference-print">Конференція (друк) </a>
-    <a href="" class="source" id="conferens-online">Конференція (онлайн)</a>
-    <a href="" class="source" id="Archival">Архівний документ</a>
+    <div class="source open-button" id="book">Книга, монографія</div>
+    <div class="source" id="chapter">Розділ </br> книги</div>
+    <div class="source" id="URL">Електронне джерело </div>
+    <div class="source" id="magazine">Газета / журнал</div>
+    <div class="source" id="scientific-jornal">Науковий журнал</div>
+    <div class="source" id="thesis">Дисертаційна робота </div>
+    <div class="source" id="conference-print">Конференція (друк) </div>
+    <div class="source" id="conferens-online">Конференція (онлайн)</div>
+    <div class="source" id="Archival">Архівний документ</div>
   </div>
+  <div id="result"></div>
 
+  <!--modal window-->
+  <div id="modal-window">
+    <div class="form-wrapper">
+      <form action="">
+        <div id="authorList"><label>Кількість авторів</label>
+        <select id="number-of-authors" name="number-of-authors">
+          <option value="1"> 1 автор </option>
+          <option value="2"> 2 автори </option>
+          <option value="7"> від 3 до 7 авторів </option>
+          <option value="more-then-8"> більше 8 авторів </option>
+          <option value="edditor"> Замість автора редактор / укладач</option>
+          <option value="null"> Автор невідомий </option>
+          <option value="group"> Колектив авторів</option>
+        </select></br></br>
+      </div> 
+        <!--  <lable for="main-name">Прізвище автора</lable> <input name="main-name" id="main-name"/>
+        <lable for="main-name">Прізвище автора</lable> <input name="main-name" id="main-name"/>
+        <lable>Його ініціали</lable> <input /> </br></br>
+        <lable for="main-name">Прізвище другого автора</lable> <input name="main-name" id="main-name"/>
+        <lable>Його ініціали</lable> <input /> </br></br>
+        <lable for="main-name">Прізвище третього автора</lable> <input name="main-name" id="main-name"/>
+        <lable>Його ініціали</lable> <input /> </br></br>
+        <lable for="main-name">Прізвище четвертого автора</lable> <input name="main-name" id="main-name"/>
+        <lable>Його ініціали</lable> <input /> </br></br>
+        <lable for="main-name">Прізвище п'ятого автора</lable> <input name="main-name" id="main-name"/>
+        <lable>Його ініціали</lable> <input /> </br></br>
+        <lable for="main-name">Прізвище шостого автора</lable> <input name="main-name" id="main-name"/>
+        <lable>Його ініціали</lable> <input /> </br></br>
+        <lable for="main-name">Прізвище сьомого автора</lable> <input name="main-name" id="main-name"/>
+        <lable>Його ініціали</lable> <input /> </br></br>
+        <lable for="main-name">Прізвище останнього автора</lable> <input name="main-name" id="main-name"/>
+        <lable>Його ініціали</lable> <input /> </br></br>
+        <lable for="main-name">Прізвище редактора / укладача</lable> <input name="main-name" id="main-name"/>
+        <lable>Його ініціали</lable> <input /> </br></br>
+        <lable for="main-name">Назва установи</lable> <input name="main-name" id="main-name"/></br></br>
+        <lable>Назва видання</lable> <input />
+        </br></br>
+        <lable> Редактор / укладач </lable> <input />
+        </br></br>
+        <lable>Том</lable> <input />
+        </br></br>
+        <lable>Рік видання</lable> <input />
+        </br></br>
+        <lable>Місто, де було опубліковано</lable> <input />
+        </br></br>
+        <lable>Видавець</lable> <input />
+        </br></br>
+        <lable>Сторінки</lable> <input />
+        </br></br>
+        <lable> doi </lable> <input />
+        </br></br>
+        <lable>URL-посилання</lable> <input />
+        </form></br></br>-->
+      <button type="button" name="button" id="close-button">Сформувати</button>
+    </div>
+
+
+
+
+  </div>
+  <div class="modal-overlay" id="modal-overlay"></div>
 <script src="main.js"></script>
 </body>
 </html>
