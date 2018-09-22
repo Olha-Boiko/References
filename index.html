@@ -27,8 +27,8 @@
     <div class="form-wrapper">
       <form action="">
         <div id="authorList"><label>Кількість авторів</label>
-        <select id="number-of-authors" name="number-of-authors">
-          <option value="1"> 1 автор </option>
+        <select id="number-of-authors" name="number-of-authors" onchange="runSelect()">
+          <option value="1" > 1 автор </option>
           <option value="2"> 2 автори </option>
           <option value="7"> від 3 до 7 авторів </option>
           <option value="more-then-8"> більше 8 авторів </option>
@@ -36,7 +36,7 @@
           <option value="null"> Автор невідомий </option>
           <option value="group"> Колектив авторів</option>
         </select></br></br>
-      </div> 
+      </div>
         <!--  <lable for="main-name">Прізвище автора</lable> <input name="main-name" id="main-name"/>
         <lable for="main-name">Прізвище автора</lable> <input name="main-name" id="main-name"/>
         <lable>Його ініціали</lable> <input /> </br></br>

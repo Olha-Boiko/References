@@ -6,15 +6,24 @@ const authorList = document.querySelector('#authorList');
 //------create form-elements
 const authorNameLabel = document.createElement('div');
  authorNameLabel.innerHTML = '<lable for="main-name">Прізвище автора</lable> <input name="main-name" id="main-name"/><lable>  Його ініціали</lable> <input /> </br></br>'
-
+function runSelect() {
+const numberOfAuthors = document.querySelector('#number-of-authors').value;
+return numberOfAuthors;
+}
 /*  switch ()
     case :*/
+
 
 openModal.item(0).addEventListener('click', function (){
   showModalWindow();
   authorList.style.display = 'block';
+    switch (strNumber) {
+      
+
+    }
+
   authorList.appendChild(authorNameLabel);
-  //authorList.appendChild(authorNameinput);
+
 });
 
 
