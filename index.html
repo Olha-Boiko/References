@@ -28,53 +28,41 @@
       <form action="">
         <div id="authorList"><label>Кількість авторів</label>
         <select id="number-of-authors" name="number-of-authors" onchange="runSelect()">
+          <option value="0" selected> Оберіть.. </option>
           <option value="1" > 1 автор </option>
           <option value="2"> 2 автори </option>
           <option value="7"> від 3 до 7 авторів </option>
           <option value="more-then-8"> більше 8 авторів </option>
-          <option value="edditor"> Замість автора редактор / укладач</option>
-          <option value="null"> Автор невідомий </option>
-          <option value="group"> Колектив авторів</option>
+        <!--  <option value="edditor"> Замість автора редактор / укладач</option>-->
+          <option value="organisation"> Автор невідомий або колективний автор (установа) </option>
         </select></br></br>
       </div>
-        <!--  <lable for="main-name">Прізвище автора</lable> <input name="main-name" id="main-name"/>
-        <lable for="main-name">Прізвище автора</lable> <input name="main-name" id="main-name"/>
-        <lable>Його ініціали</lable> <input /> </br></br>
-        <lable for="main-name">Прізвище другого автора</lable> <input name="main-name" id="main-name"/>
-        <lable>Його ініціали</lable> <input /> </br></br>
-        <lable for="main-name">Прізвище третього автора</lable> <input name="main-name" id="main-name"/>
-        <lable>Його ініціали</lable> <input /> </br></br>
-        <lable for="main-name">Прізвище четвертого автора</lable> <input name="main-name" id="main-name"/>
-        <lable>Його ініціали</lable> <input /> </br></br>
-        <lable for="main-name">Прізвище п'ятого автора</lable> <input name="main-name" id="main-name"/>
-        <lable>Його ініціали</lable> <input /> </br></br>
-        <lable for="main-name">Прізвище шостого автора</lable> <input name="main-name" id="main-name"/>
-        <lable>Його ініціали</lable> <input /> </br></br>
-        <lable for="main-name">Прізвище сьомого автора</lable> <input name="main-name" id="main-name"/>
-        <lable>Його ініціали</lable> <input /> </br></br>
-        <lable for="main-name">Прізвище останнього автора</lable> <input name="main-name" id="main-name"/>
-        <lable>Його ініціали</lable> <input /> </br></br>
+      <lable for="title">Назва видання</lable> <input name="title" />
+      </br></br>
+      <lable>Місто, де було опубліковано</lable> <input />
+      </br></br>
+      <lable>Видавець</lable> <input />
+      </br></br>
+      <lable>Рік видання</lable> <input />
+      </br></br>
+      <lable>Том</lable> <input />
+      </br></br>
+      <lable>Сторінки</lable> <input />
+      </br></br>
+      <lable> doi </lable> <input />
+      </br></br>
+      <lable>URL-посилання</lable> <input />
+      </form></br></br>
+        <!--
         <lable for="main-name">Прізвище редактора / укладача</lable> <input name="main-name" id="main-name"/>
         <lable>Його ініціали</lable> <input /> </br></br>
         <lable for="main-name">Назва установи</lable> <input name="main-name" id="main-name"/></br></br>
-        <lable>Назва видання</lable> <input />
+
+        !!!!<lable> Редактор / укладач </lable> <input />
         </br></br>
-        <lable> Редактор / укладач </lable> <input />
-        </br></br>
-        <lable>Том</lable> <input />
-        </br></br>
-        <lable>Рік видання</lable> <input />
-        </br></br>
-        <lable>Місто, де було опубліковано</lable> <input />
-        </br></br>
-        <lable>Видавець</lable> <input />
-        </br></br>
-        <lable>Сторінки</lable> <input />
-        </br></br>
-        <lable> doi </lable> <input />
-        </br></br>
-        <lable>URL-посилання</lable> <input />
-        </form></br></br>-->
+        -->
+
+
       <button type="button" name="button" id="close-button">Сформувати</button>
     </div>
 
