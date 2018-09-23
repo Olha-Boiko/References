@@ -80,3 +80,18 @@
 #authorList {
   display: none;
 }
+#result{
+  max-width: 800px;
+  margin: auto;
+  border-radius: 10px;
+  border: 5px solid rgb(100, 255, 100);
+  font-size: 18px;
+  min-height: 100px;
+}
+
+.reference{
+  color: rgb(0, 153, 51);
+  text-align: center;
+  font-family: Gotham;
+  text-decoration: none;
+}

@@ -20,12 +20,13 @@
     <div class="source" id="conferens-online">Конференція (онлайн)</div>
     <div class="source" id="Archival">Архівний документ</div>
   </div>
+  <h1 class="reference">References</h1>
   <div id="result"></div>
 
   <!--modal window-->
   <div id="modal-window">
     <div class="form-wrapper">
-      <form action="">
+      <form name="metaData" action="">
         <div id="authorList"><label>Кількість авторів</label>
         <select id="number-of-authors" name="number-of-authors" onchange="runSelect()">
           <option value="0" selected> Оберіть.. </option>
@@ -37,13 +38,13 @@
           <option value="organisation"> Автор невідомий або колективний автор (установа) </option>
         </select></br></br>
       </div>
-      <lable for="title">Назва видання</lable> <input name="title" />
+      <lable for="title"><span class ="title">Назва видання</span></lable> <input name="title" />
       </br></br>
-      <lable>Місто, де було опубліковано</lable> <input />
+      <lable for="location">Місто, де було опубліковано</lable> <input name="location"/>
       </br></br>
-      <lable>Видавець</lable> <input />
+      <lable for="publisher">Видавець</lable> <input name="publisher"/>
       </br></br>
-      <lable>Рік видання</lable> <input />
+      <lable for="year">Рік видання</lable> <input name="year"/>
       </br></br>
       <lable>Том</lable> <input />
       </br></br>
@@ -62,8 +63,8 @@
         </br></br>
         -->
 
-
-      <button type="button" name="button" id="close-button">Сформувати</button>
+      <button type="button" name="button" id="handling-button">Сформувати</button>
+      <button type="button" name="close" id="close-button">Закрити</button>
     </div>
 
 
